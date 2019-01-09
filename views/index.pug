@@ -1,0 +1,18 @@
+html
+    head    
+        title Welcome
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(type="text/javascript", src="/index.js")
+        
+
+    body  
+        h1 LOGIN SUCCESSFUL  
+        p Username : #{vari.username}
+        p Email : #{vari.email}
+        p Number : #{vari.number}
+        - var date=vari.createdAt.slice(0,10);
+        p Joining Date : #{date}
+        - var time=vari.createdAt.slice(12,19);
+        p Joining Time : #{time}
+
+        button.logout LOGOUT

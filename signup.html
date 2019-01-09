@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="signup.js"></script>
+</head>
+<body>
+    <table>
+        <form method='post' action='/signup'>
+            <tr>
+                <td>Username :</td>
+                <td><input type='text' name='username'></td>
+            </tr>
+
+            <tr>
+                <td>Password :</td>
+                <td><input type='password' name='password' id='password'></td>
+            </tr>
+
+
+            <tr>
+                <td>Confirm Password :</td>
+                <td><input type='password' name='Cpassword' id='cPassword'></td>
+                <td><span id='message'></span></td>
+            </tr>
+
+
+            <tr>
+                <td>Email :</td>
+                <td><input type='text' name='email'></td>
+            </tr>
+
+            <tr>
+                <td>Number :</td>
+                <td><input type='text' name='number'></td>
+            </tr>
+            
+            <tr><td><input type='submit' name='submit'></td></tr>
+        </form>
+    </table>
+   
+    <h1>Already a member ?</h1>
+    <div><button id='signInButton'>SIGN IN</button></div>
+</body>
+</html>
